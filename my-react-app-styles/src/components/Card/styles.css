@@ -1,3 +1,5 @@
-.card {
+.cardStyles {
   background: pink;
+  text-align: center;
+  padding: 8px;
 }
