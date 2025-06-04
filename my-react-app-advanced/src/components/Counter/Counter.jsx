@@ -16,6 +16,7 @@ const Counter = () => {
 
   return (
     <div>
+      <h2>Counter with reducer</h2>
       <p>Contador: {state.count}</p>
       <button onClick={() => dispatch({ type: "increment" })}>
         Increment

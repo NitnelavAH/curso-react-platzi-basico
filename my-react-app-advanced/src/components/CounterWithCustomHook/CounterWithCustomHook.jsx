@@ -10,6 +10,9 @@ const CounterWithCustomHook = () => {
 
   return (
     <>
+      <h2>
+        Counter With Custom Hook
+      </h2>
       <p>Contador: {count}</p>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>

@@ -23,6 +23,7 @@ function CounterWithReactMemo() {
 
   return (
     <div>
+      <h2>React Memo</h2>
       <button onClick={increment}>
         Incrementar
       </button>
