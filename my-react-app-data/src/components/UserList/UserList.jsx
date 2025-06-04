@@ -12,11 +12,11 @@ const UserList = () => {
 
   return (
     <div>
-      <h1>Lista de Usuarios</h1>
+      <h2>Lista de Usuarios Fetch</h2>
       <ul>
         {
           users.map((user) => (
-            <li key={user.id}>{user.name}</li>
+            <li key={user.id}>{user.name} - {user.address.city}</li>
           ))
         }
       </ul>

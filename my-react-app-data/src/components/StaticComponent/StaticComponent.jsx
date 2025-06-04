@@ -2,13 +2,16 @@ const StaticComponent = () => {
   const items = ["Manzana", "Banana", "Cereza"];
 
   return (
-    <ul>
-      {
-        items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))
-      }
-    </ul>
+    <>
+      <h2>Lista Estatica</h2>
+      <ul>
+        {
+          items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))
+        }
+      </ul>
+    </>
   )
 }
 

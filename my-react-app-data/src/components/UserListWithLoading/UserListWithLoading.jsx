@@ -34,7 +34,7 @@ const UserList = () => {
 
   return (
     <div>
-      <h1>Lista de Usuarios</h1>
+      <h2>Lista de Usuarios Fetch Loading</h2>
       <ul>
         {
           users.map((user) => (

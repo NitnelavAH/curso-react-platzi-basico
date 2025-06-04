@@ -5,6 +5,7 @@ const SearchPosts = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    if(!query) return;
     fetch(`https://jsonplaceholder.typicode.com/posts?title_like=${query}`)
       .then((response) => response.json())
       .then((data) => setPosts(data))
@@ -13,7 +14,7 @@ const SearchPosts = () => {
 
   return (
     <div>
-      <h1>Lista de Usuarios</h1>
+      <h2>Buscar posts</h2>
       <input
         type="text"
         placeholder="Buscar por título"
