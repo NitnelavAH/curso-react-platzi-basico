@@ -5,7 +5,7 @@ type ThemeContextType = {
   toggleTheme: () => void;
 }
 
-const ThemeContext = createContext<ThemeContextType>();
+const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 
 function ThemeProvider({ children }: { children: React.ReactNode }): React.ReactNode {
   const [theme, setTheme] = useState("light")
